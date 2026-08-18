@@ -47,28 +47,6 @@ The project is built using a **React frontend** and a **Node.js/Express backend*
 ## 📁 Project Structure
 
 ```text
-MealMate/
-│
-├── products/
-│   │
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── assets/
-│   │   └── ...
-│   │
-│   ├── backend/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   ├── controllers/
-│   │   ├── middleware/
-│   │   ├── server.js
-│   │   └── package.json
-│   │
-│   ├── package.json
-│   └── ...
-│
-└── README.md
 ```
 
 ---
