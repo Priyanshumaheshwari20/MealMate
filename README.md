@@ -42,15 +42,6 @@ The project is built using a **React frontend** and a **Node.js/Express backend*
 
 * MongoDB
 
----
-
-## 📁 Project Structure
-
-```text
-```
-
----
-
 # ⚙️ Installation & Setup
 
 Follow the steps below to run MealMate locally.
