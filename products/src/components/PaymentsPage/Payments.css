@@ -1,0 +1,401 @@
+.payment-page {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 6rem;
+    padding: 50px 7%;
+    background: #f6f9fc;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Inter", sans-serif;
+}
+
+
+/* ===========================
+   LEFT SIDE
+=========================== */
+
+.summary-section {
+    flex: 1;
+    background: #fff;
+    border-radius: 16px;
+    padding: 35px;
+    border: 1px solid #e8e8e8;
+}
+
+.summary-section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #222;
+    font-weight: 600;
+}
+
+.summary-items {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #ececec;
+}
+
+.summary-item .left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.summary-item img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.summary-item h4 {
+    margin: 0;
+    font-size: 17px;
+    color: #222;
+    font-weight: 600;
+}
+
+.summary-item span {
+    color: gray;
+    font-size: 14px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+}
+
+.price-box {
+    margin-top: 35px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 17px;
+}
+
+.divider {
+    height: 1px;
+    background: #e5e5e5;
+    margin: 18px 0;
+}
+
+.total {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.delivery-address {
+    margin-top: 40px;
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #ededed;
+}
+
+.delivery-address h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.delivery-address p {
+    margin: 6px 0;
+    color: #666;
+}
+
+
+/* ===========================
+   RIGHT SIDE
+=========================== */
+
+.payment-section {
+    width: 460px;
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    border: 1px solid #e8e8e8;
+}
+
+.payment-section h1 {
+    font-size: 36px;
+    margin-bottom: 35px;
+    color: #222;
+    font-weight: 600;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+}
+
+.payment-form input {
+    height: 52px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    transition: .3s;
+    background: #fafafa;
+}
+
+.payment-form input:focus {
+    outline: none;
+    border-color: #635bff;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(99, 91, 255, .15);
+}
+
+.card-row {
+    display: flex;
+    gap: 12px;
+}
+
+.card-row input {
+    flex: 1;
+}
+
+.pay-button {
+    margin-top: 15px;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    background: #635bff;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.pay-button:hover {
+    background: #554bf3;
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1100px) {
+    .payment-page {
+        flex-direction: column;
+        padding: 35px;
+    }
+    .payment-section {
+        width: 100%;
+    }
+    .summary-section {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   UPI SECTION
+========================= */
+
+.upi-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    padding-top: 35px;
+    border-top: 1px solid #ececec;
+}
+
+.upi-section h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.upi-text {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.upi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.upi-card {
+    background: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.upi-card:hover {
+    border-color: #635bff;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
+}
+
+.upi-card img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.upi-card span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.upi-divider {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.upi-divider::before,
+.upi-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.upi-divider span {
+    margin: 0 15px;
+    color: #888;
+}
+
+.upi-input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+.upi-button {
+    width: 100%;
+    height: 55px;
+    background: #0f9d58;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.upi-button:hover {
+    background: #0b8748;
+}
+
+@media(max-width:700px) {
+    .upi-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:500px) {
+    .upi-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:768px) {
+    .payment-page {
+        padding: 20px;
+        gap: 30px;
+    }
+    .summary-section {
+        padding: 20px;
+    }
+    .payment-section {
+        padding: 25px;
+    }
+    .payment-section h1 {
+        font-size: 28px;
+    }
+    .summary-section h2 {
+        font-size: 24px;
+    }
+    .summary-item img {
+        width: 60px;
+        height: 60px;
+    }
+    .summary-item h4 {
+        font-size: 15px;
+    }
+    .price {
+        font-size: 16px;
+    }
+    .total {
+        font-size: 22px;
+    }
+    .card-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .pay-button {
+        height: 52px;
+    }
+}
+
+@media(max-width:480px) {
+    .payment-page {
+        padding: 15px;
+    }
+    .summary-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .summary-item .left {
+        width: 100%;
+    }
+    .price {
+        align-self: flex-end;
+    }
+    .delivery-address {
+        padding: 15px;
+    }
+    .payment-section {
+        padding: 18px;
+    }
+    .payment-section h1 {
+        font-size: 24px;
+    }
+    .payment-form input {
+        font-size: 14px;
+    }
+    .pay-button {
+        font-size: 16px;
+    }
+}

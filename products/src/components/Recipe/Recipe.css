@@ -1,0 +1,139 @@
+.recipe-page {
+    margin-top: 5rem;
+    display: flex;
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+
+/* Sidebar */
+
+.recipe-sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    height: calc(100vh - 5rem);
+    position: sticky;
+    top: 5rem;
+    border-right: 1px solid #e5e7eb;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.04);
+}
+
+
+/* Cards Grid */
+
+.recipe-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 28px;
+    padding: 30px;
+}
+
+
+/* Premium Card */
+
+.recipe-card {
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Image */
+
+.recipe-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.recipe-card:hover .recipe-image {
+    transform: scale(1.08);
+}
+
+
+/* Content */
+
+.recipe-content {
+    padding: 18px;
+}
+
+.recipe-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.recipe-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* Category Badge */
+
+.badge {
+    background: linear-gradient( 135deg, #ff6b35, #ff8e53);
+    color: white;
+    padding: 7px 14px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Meal Type Badge */
+
+.badge-secondary {
+    background: #eef2ff;
+    color: #4338ca;
+    padding: 7px 14px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Price */
+
+.recipe-price {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #16a34a;
+    margin-top: 10px;
+}
+
+
+/* View Button */
+
+.view-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient( 135deg, #ff6b35, #ff8e53);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}

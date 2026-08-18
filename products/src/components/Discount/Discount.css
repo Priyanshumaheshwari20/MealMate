@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+.offer-card {
+    position: relative;
+    width: 85%;
+    height: 230px;
+    margin-left: 10%;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: linear-gradient( 90deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.82) 25%, rgba(0, 0, 0, 0.45) 55%, rgba(0, 0, 0, 0.15) 100%), url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2000");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.offer-content {
+    max-width: 500px;
+    padding-left: 50px;
+    color: #fff;
+    z-index: 2;
+}
+
+.FIRST-ORDER-OFFER {
+    display: inline-block;
+    padding: 6px 14px;
+    margin-bottom: 12px;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.12);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.offer-content h1 {
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.offer-content h1 span {
+    font-size: 52px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.offer-content p {
+    margin: 12px 0 20px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.BANIYA47 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.BANIYA47 span {
+    padding: 10px 18px;
+    border-radius: 12px;
+    border: 1px dashed rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.08);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.BANIYA47 button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 12px;
+    background: #ff5a5f;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.BANIYA47 button:hover {
+    background: #ff4757;
+    transform: translateY(-2px);
+}
+
+.claim-btn {
+    margin-top: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 22px;
+    border-radius: 12px;
+    background: #ff5a5f;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.claim-btn:hover {
+    background: #ff4757;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .offer-card {
+        width: 95%;
+        height: auto;
+        min-height: 240px;
+        margin: 20px auto;
+    }
+    .offer-content {
+        padding: 24px;
+    }
+    .offer-content h1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    .offer-content h1 span {
+        font-size: 42px;
+    }
+    .BANIYA47 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

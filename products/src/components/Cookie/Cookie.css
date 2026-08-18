@@ -1,0 +1,94 @@
+.cookie-page {
+    background: #f7f7f7;
+    min-height: 100vh;
+}
+
+.cookie-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+}
+
+
+/* Header */
+
+.cookie-header {
+    padding: 60px 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.cookie-header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 15px 0;
+    margin-top: 10px;
+}
+
+.cookie-header p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 19px;
+    opacity: .95;
+    margin-top: 10px;
+}
+
+.policy-badge {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 8px 18px;
+    background: #fff;
+    color: #ff2d6d;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+
+/* Sections */
+
+.policy-section {
+    border-left: 5px solid #ff2d6d;
+    padding-left: 20px;
+    margin-bottom: 35px;
+    transition: .3s;
+}
+
+.policy-section:hover {
+    transform: translateX(6px);
+}
+
+.policy-section h4 {
+    color: #111;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.policy-section p {
+    color: #666;
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+
+.policy-section ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.policy-section li {
+    color: #555;
+    line-height: 2;
+}
+
+
+/* Last Update */
+
+.last-update {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+    color: #999;
+    font-size: 15px;
+}

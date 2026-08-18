@@ -1,0 +1,98 @@
+/* Container */
+
+.food-container-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+
+/* Heading */
+
+.heading-responsive {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+/* Card */
+
+.food-card-responsive {
+    width: 18rem;
+    transition: all 0.3s ease;
+}
+
+.food-card-responsive:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   Tablet (769px–1024px)
+   2 Cards
+========================= */
+
+@media (max-width: 1024px) {
+    .food-container-responsive {
+        justify-content: center !important;
+        margin: 2rem !important;
+        gap: 2rem !important;
+    }
+    .food-card-responsive {
+        width: 45% !important;
+        max-width: 320px;
+    }
+    .heading-responsive {
+        font-size: 30px !important;
+        text-align: center;
+        justify-content: center !important;
+        margin: 2rem !important;
+    }
+}
+
+
+/* =========================
+   Large Mobile (481px–768px)
+   2 Cards
+========================= */
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .food-container-responsive {
+        justify-content: center !important;
+        margin: 1rem !important;
+        gap: 1rem !important;
+    }
+    .food-card-responsive {
+        width: 45% !important;
+        max-width: 300px;
+    }
+    .heading-responsive {
+        font-size: 24px !important;
+        text-align: center;
+        justify-content: center !important;
+        margin: 1rem !important;
+    }
+}
+
+
+/* =========================
+   Small Mobile (≤480px)
+   1 Card
+========================= */
+
+@media (max-width: 480px) {
+    .food-container-responsive {
+        justify-content: center !important;
+        margin: 1rem !important;
+        gap: 1rem !important;
+    }
+    .food-card-responsive {
+        width: 100% !important;
+        max-width: 350px;
+    }
+    .heading-responsive {
+        font-size: 20px !important;
+        text-align: center;
+        justify-content: center !important;
+    }
+}

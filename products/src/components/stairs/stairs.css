@@ -1,0 +1,44 @@
+.stairs-overlay {
+    z-index: 9999;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.stair {
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+
+
+/* Soft Glow Effect */
+
+.stair::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient( to bottom, rgba(255, 255, 255, 0.25), transparent);
+}
+
+
+/* White + Pink Theme */
+
+.stair-1 {
+    background: #ffffff;
+}
+
+.stair-2 {
+    background: #c45252;
+}
+
+.stair-3 {
+    background: linear-gradient( 135deg, #ff8fab, #ff4d6d)\;
+}
+
+.stair-4 {
+    background: #ffffff;
+}
+
+.stair-5 {
+    background: #ffffff;
+}

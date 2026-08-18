@@ -1,0 +1,38 @@
+/* Tablet + Large Mobile */
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .food-container-responsive {
+        justify-content: center;
+        margin: 1rem !important;
+        gap: 1rem !important;
+    }
+    .food-card-responsive {
+        width: 45% !important;
+        max-width: 320px;
+    }
+    .heading-responsive {
+        font-size: 24px !important;
+        text-align: center;
+        justify-content: center !important;
+        margin: 1rem !important;
+    }
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+    .food-container-responsive {
+        justify-content: center;
+        margin: 1rem !important;
+    }
+    .food-card-responsive {
+        width: 100% !important;
+        max-width: 350px;
+    }
+    .heading-responsive {
+        font-size: 20px !important;
+        text-align: center;
+        justify-content: center !important;
+    }
+}

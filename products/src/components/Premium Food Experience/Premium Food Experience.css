@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading-wrapper {
+    width: 90%;
+    margin: 120px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    overflow: visible;
+}
+
+.tilt-container {
+    flex: 1;
+}
+
+.food-badge {
+    display: inline-block;
+    background: #fff1e6;
+    color: #ff6b00;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.main-heading {
+    font-size: 4rem;
+    margin-top: 25px;
+    line-height: 1.1;
+    color: #222;
+}
+
+.sub-heading {
+    margin-top: 20px;
+    color: #666;
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+.food-info-box {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: white;
+    padding: 18px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.info-card:hover {
+    transform: translateX(10px);
+}
+
+.info-card span {
+    font-size: 2rem;
+}
+
+.info-card h4 {
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.info-card p {
+    color: #777;
+    line-height: 1.5;
+}
+
+.food-quote {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff8f3;
+    border-left: 6px solid #ff6b00;
+    border-radius: 15px;
+}
+
+.food-quote h3 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.food-quote p {
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* IMAGE SECTION */
+
+.srk {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+}
+
+.srk img {
+    width: 500px;
+    height: 650px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .15);
+    position: relative;
+    z-index: 1;
+}
+
+
+/* FLOATING CARDS */
+
+.floating-food-card {
+    position: absolute;
+    background: white;
+    padding: 16px 24px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .12);
+    font-weight: 600;
+    z-index: 999;
+    white-space: nowrap;
+    animation: floatCard 3s ease-in-out infinite;
+}
+
+
+/* TOP RIGHT */
+
+.top-card {
+    top: 50px;
+    right: -60px;
+}
+
+
+/* CENTER LEFT */
+
+.middle-card {
+    top: 260px;
+    left: -80px;
+}
+
+
+/* BOTTOM RIGHT */
+
+.bottom-card {
+    bottom: 60px;
+    right: -40px;
+}
+
+@keyframes floatCard {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* TABLET */
+
+@media (max-width: 992px) {
+    .heading-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+    .main-heading {
+        font-size: 2.8rem;
+    }
+    .srk img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+    .floating-food-card {
+        display: none;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+    .main-heading {
+        font-size: 2.2rem;
+    }
+    .sub-heading {
+        font-size: 1rem;
+    }
+    .food-info-box {
+        gap: 12px;
+    }
+    .info-card {
+        padding: 14px;
+    }
+}

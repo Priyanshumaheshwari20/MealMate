@@ -1,0 +1,80 @@
+/* Container */
+
+.food-container-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+
+/* Card */
+
+.food-card-responsive {
+    width: 19rem;
+    transition: all 0.3s ease;
+}
+
+.food-card-responsive:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ===========================
+   Desktop (1025px and above)
+   3-4 Cards
+=========================== */
+
+
+/* ===========================
+   Tablet (769px - 1024px)
+   2 Cards
+=========================== */
+
+@media (max-width: 1024px) {
+    .food-container-responsive {
+        justify-content: center !important;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+        gap: 2rem !important;
+    }
+    .food-card-responsive {
+        width: 45% !important;
+        max-width: 320px;
+    }
+}
+
+
+/* ===========================
+   Large Mobile (481px - 768px)
+   2 Cards
+=========================== */
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .food-container-responsive {
+        justify-content: center !important;
+        margin: 1rem !important;
+        gap: 1rem !important;
+    }
+    .food-card-responsive {
+        width: 45% !important;
+        max-width: 300px;
+    }
+}
+
+
+/* ===========================
+   Small Mobile (480px and below)
+   1 Card
+=========================== */
+
+@media (max-width: 480px) {
+    .food-container-responsive {
+        justify-content: center !important;
+        margin: 1rem !important;
+        gap: 1rem !important;
+    }
+    .food-card-responsive {
+        width: 100% !important;
+        max-width: 350px;
+    }
+}
